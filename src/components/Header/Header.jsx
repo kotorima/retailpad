@@ -1,8 +1,7 @@
+import styles from './styles.module.scss';
 
-import { header } from './style.module.scss';
-
-function Header() {
-  console.log(header);
+export default function Header () {
+  const {header} = styles;
 
   return (
     <div className={header}>
@@ -12,4 +11,3 @@ function Header() {
   );
 }
 
-export default Header;

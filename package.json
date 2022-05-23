@@ -12,6 +12,7 @@
         "@types/react-dom": "^18.0.4",
         "node-sass": "^7.0.1",
         "react": "^18.1.0",
+        "react-css-modules": "^4.7.11",
         "react-dom": "^18.1.0",
         "react-scripts": "5.0.1",
         "react-scripts-cssmodules": "^1.1.50",
