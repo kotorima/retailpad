@@ -1,3 +1,4 @@
+import Button from '@mui/material/Button';
 import styles from './styles.module.scss';
 
 export default function Header () {
@@ -6,7 +7,7 @@ export default function Header () {
   return (
     <div className={header}>
       <h1>Hello, World!</h1>
-      <button>Жамк</button>
+      <Button variant="contained">Жмяк</Button>
     </div>
   );
 }
