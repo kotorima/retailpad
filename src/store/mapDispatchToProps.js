@@ -1,19 +1,19 @@
 import { bindActionCreators } from 'redux';
-import action_1 from './actionCreators/action_1';
-import action_2 from './actionCreators/action_2';
+import action1 from './actionCreators/action1';
+import action2 from './actionCreators/action2';
 
 function mapDispatchToProps(component) {
     switch (component) {
-        case "Component_1":
+        case "Component1":
             return function(dispatch) {
                 return {
-                    change_value_1: bindActionCreators(action_1, dispatch)
+                    changeValue1: bindActionCreators(dispatch, action1)
                 };
             };
-        case "Component_2":
+        case "Component2":
             return function(dispatch) {
                 return {
-                    change_value_2: bindActionCreators(action_2, dispatch)
+                    changeValue2: bindActionCreators(dispatch, action2)
                 };
             };
         default:

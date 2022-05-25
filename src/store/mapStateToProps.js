@@ -1,18 +1,18 @@
 function mapStateToProps(component) {
     switch (component) {
-        case "Component_1":
+        case "Component1":
             {
                 return function(state) {
                     return {
-                        value_1: state.value_1
+                        value1: state.value1
                     };
                 }
             }
-        case "Component_2":
+        case "Component2":
             {
                 return function(state) {
                     return {
-                        value_2: state.value_2
+                        value2: state.value2
                     };
                 }
             }
