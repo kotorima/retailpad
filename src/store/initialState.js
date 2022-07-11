@@ -1,6 +1,9 @@
 const initialState = {
-    value1: false,
-    value2: false
+    cityList: [],
+    filialsList: [],
+    statusesList: [],
+    typesOrders: [],
+    notifications: [],
 };
 
 export default initialState;

@@ -1,27 +1,22 @@
 import React from 'react';
+import {SnackbarProvider} from 'notistack';
 import Header from './components/Header/Header';
-import logo from './logo.svg';
+import CityList from './components/CityList/CityList';
+import Navigation from "./routing/Navigation";
+import Layout from "./routing/Layout";
 import './App.scss';
 
 function App() {
   return (
-    <div className="App">
-      <Header />
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <SnackbarProvider maxSnack={10}>
+      <div className='App'>
+        <Header />
+        <CityList />
+        <Layout>
+          <Navigation />
+        </Layout>
+      </div>
+    </SnackbarProvider>
   );
 }
 

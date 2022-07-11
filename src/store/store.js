@@ -1,9 +1,16 @@
-import { createStore } from 'redux';
-import reducers from './reducers/reducers';
+import { configureStore } from '@reduxjs/toolkit';
+import cityListReducer from './slices/cityList';
+import filialsListReducer from './slices/filialsList';
+import statusesListReducer from './slices/statusesList';
+import notificationsReducer from './slices/notifications'
 
-const store = createStore(reducers);
-
-// для теста работы стора 
-// store.subscribe(() => console.info(store.getState()))
+const store = configureStore({
+    reducer: {
+        cityList: cityListReducer,
+        filialsList: filialsListReducer,
+        statusesList: statusesListReducer,
+        notifications: notificationsReducer
+    },
+});
 
 export default store;

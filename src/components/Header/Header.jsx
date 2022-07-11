@@ -1,14 +1,14 @@
 import React from 'react';
-import Button from '@mui/material/Button';
+import NavMenu from '../NavMenu/NavMenu';
 import styles from './styles.module.scss';
 
 function Header () {
-  const {header} = styles;
-
+  const {header, title} = styles;
   return (
     <div className={header}>
-      <h1>Hello World!</h1>
-      <Button variant="contained">Button</Button>
+      <div className={title}>Retail₽ad</div>
+      <div>test</div>
+      <NavMenu />
     </div>
   );
 }
